@@ -76,8 +76,8 @@ If duplicates are present in the given sorted list, we can find an index of part
 
 1. **Finding first Occurence of a target** 
 
-    In bot iterative and recursive approaches, index of a first occurence of a target search element can be found.
-https://github.com/shivanithorve01/Assignment-1/blob/branch_1/PS1_KarateChop/KarateChopDescendingSortedArray.java
+    In both iterative and recursive approaches, index of a first occurence of a target search element can be found.
+
 
 2. **Finding Last Occurence of a target** 
 
