@@ -53,7 +53,7 @@ Given Test Cases :
 
 Time Complexity = O(n)  
 
-_refer to KarateChopIterative.java_ 
+[_refer to KarateChopIterative.java_](https://github.com/shivanithorve01/Assignment-1/blob/branch_1/PS1_KarateChop/KarateChopIterative.java) 
 
 ### **Approach 2 : Recursive Approach**
 
@@ -67,7 +67,7 @@ _refer to KarateChopIterative.java_
 
 Time Complexity = O(log n)  
 
-_refer to KarateChopRecursive.java_  
+[_refer to KarateChopRecursive.java_](https://github.com/shivanithorve01/Assignment-1/blob/branch_1/PS1_KarateChop/KarateChopRecursive.java)  
 
 ***
 ## **Variations**
@@ -77,7 +77,7 @@ If duplicates are present in the given sorted list, we can find an index of part
 1. **Finding first Occurence of a target** 
 
     In bot iterative and recursive approaches, index of a first occurence of a target search element can be found.
-
+https://github.com/shivanithorve01/Assignment-1/blob/branch_1/PS1_KarateChop/KarateChopDescendingSortedArray.java
 
 2. **Finding Last Occurence of a target** 
 
@@ -89,7 +89,7 @@ If duplicates are present in the given sorted list, we can find an index of part
 
     <br/>
 
-    _refer to KarateChopFindLastOccurence.java_  
+    [_refer to KarateChopFindLastOccurence.java_](https://github.com/shivanithorve01/Assignment-1/blob/branch_1/PS1_KarateChop/KarateChopFindLastOccurence.java)  
 <br/>
 
 3. **Finding a target in descending sorted array**
@@ -99,6 +99,6 @@ If duplicates are present in the given sorted list, we can find an index of part
 
     <br/>
 
-    _refer to KarateChopDescendingSortedArray.java_
+    [_refer to KarateChopDescendingSortedArray.java_](https://github.com/shivanithorve01/Assignment-1/blob/branch_1/PS1_KarateChop/KarateChopDescendingSortedArray.java)
 
 ***
