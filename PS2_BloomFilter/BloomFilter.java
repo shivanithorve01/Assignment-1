@@ -54,7 +54,7 @@ public class BloomFilter
     {
         int[] hashValues = calculateMD5Hash(word);
         for (int hashValue : hashValues) {
-            bloomFilter.set(Math.abs(hashValue % FILTER_SIZE), true);
+            bloomFilter.set(Math.abs(hashValue % FILTER_SIZE), true); 
         }
     }
 
@@ -71,21 +71,22 @@ public class BloomFilter
     }
 
     //Calculates the MD5 hash values for a given input string.
+    //Split the 128-bit MD5 hash into four 32-bit integers
     private int[] calculateMD5Hash(String input) 
     {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(input.getBytes());
-            byte[] digest = md.digest();
+            md.update(input.getBytes()); // converts the string into bytes and feeds it into the message digest
+            byte[] digest = md.digest(); //computes the MD5 hash of the input and returns a hash value. 
 
             int[] hashValues = new int[4];
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 4; i++) { // four 32-bit integers
                 int hash = 0;
-                for (int j = 0; j < 4; j++) {
-                    hash <<= 8;
-                    hash |= (digest[i * 4 + j] & 0xFF);
+                for (int j = 0; j < 4; j++) { //each byte within the 32-bit integer.
+                    hash <<= 8; //shifts the hash value 8 bits to the left, making room for the next byte.
+                    hash |= (digest[i * 4 + j] & 0xFF); //to consider only lower 8 bits
                 }
-                hashValues[i] = hash;
+                hashValues[i] = hash;// assigns the resulting 32-bit integer to the corresponding index in the hashValues array.
             }
             return hashValues;
         } 
