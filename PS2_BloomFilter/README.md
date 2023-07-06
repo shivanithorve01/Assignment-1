@@ -32,7 +32,8 @@ public class BloomFilter
 
 4. `private boolean checkWord(String word)`
 
-   - Description: Checks if a word exists in the dictionary using the Bloom filter.
+   - Description: Checks if a word exists in the dictionary using the Bloom filter.  
+     This function checks if a word exists in the Bloom filter. It calculates the MD5 hash values of the word and checks the corresponding bits in the bloomFilter array. If any of the bits are false, it means the word is definitely not in the filter, and it returns false. If all the bits are true, it returns true, indicating that the word may or may not be in the filter
    - Usage: The method is called in the main method to check whether a word exists in the dictionary.
    - Parameters:
      - `word` - A string representing the word to be checked.
@@ -40,7 +41,8 @@ public class BloomFilter
 5. `private int[] calculateMD5Hash(String input) throws NoSuchAlgorithmException`
 
    - Description: Calculates the MD5 hash values for a given input string.
-   - Usage: The method is used internally to compute hash values for words being added to the Bloom filter.
+   - Usage: The method is used internally to compute hash values for words being added to the Bloom filter.  
+     The input string is converted to bytes, and the MD5 algorithm updates the digest with these bytes. The resulting digest is then split into four 32-bit integers, which are returned as the hash values.
    - Parameters:
      - `input` - A string for which the MD5 hash needs to be calculated.
    - Returns: An array of four integers representing the MD5 hash values.
