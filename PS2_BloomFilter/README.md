@@ -1,4 +1,4 @@
-# **BloomFilter**
+# **[BloomFilter](http://codekata.com/kata/kata05-bloom-filters/)**
 
 The `BloomFilter` Java class provides functionality to read a dictionary of words from a text file, construct a Bloom filter using MD5 hash functions, and check whether a given word exists in the dictionary using the Bloom filter.
 
@@ -56,8 +56,8 @@ A Bloom filter is a space-efficient probabilistic data structure used to test th
 
 ### **Usage**
 
-1. Place the `wordlist.txt` file in the same directory as the Java source file (`BloomFilter.java`).
-
+1. Place the [`wordlist.txt`](http://codekata.com/data/wordlist.txt) file in the same directory as the Java source file (`BloomFilter.java`).
+   
 2. Compile the Java source file using the command:
    ```
    javac BloomFilter.java
